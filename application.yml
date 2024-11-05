@@ -1,4 +1,6 @@
 eureka:
+  instance:
+    instanceId: ${spring.application.name}:${random.value}
   client:
     serviceUrl:
-      defaultZone: http://localhost:8090/eureka/
+      defaultZone: http://localhost:8090/eureka
